@@ -1,4 +1,5 @@
 **CI/CD Pipelines:**
+[MS DOCS - CI vs CD ](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#automate-tests-builds-and-delivery)
 
 **Definition:**
 
@@ -37,3 +38,12 @@ In Continuous Deployment, the kitchen automatically serves the meal to customers
    - CD spans the later stages of the SDLC, from integration and testing to delivery and deployment, ensuring that code is ready for production and, in the case of Continuous Deployment, automatically deploying it.
 
 In summary, CI/CD pipelines are like a well-organized kitchen where chefs continuously prepare, test, and serve meals (code changes) to customers (production). CI focuses on cooking and testing, while CD manages when and how the meals are served, with Continuous Deployment being the most automatic and efficient option.
+
+
+# Azure Pipelines
+- Azure Pipelines automatically builds and tests code projects. It supports all major languages and project types and combines continuous integration, continuous delivery, and continuous testing to build, test, and deliver your code to any destination
+## Need to get Started
+To use Azure Pipelines, complete the following tasks:
+
+Have an organization in Azure DevOps. If you don't have one, create an organization now.
+Store your source code in a version control system.![image](https://github.com/Ananyojha/az-400/assets/76782360/b5d53707-6ca8-4907-9db8-43ea45e9774d)

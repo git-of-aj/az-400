@@ -47,3 +47,5 @@ To use Azure Pipelines, complete the following tasks:
 
 Have an organization in Azure DevOps. If you don't have one, create an organization now.
 Store your source code in a version control system.![image](https://github.com/Ananyojha/az-400/assets/76782360/b5d53707-6ca8-4907-9db8-43ea45e9774d)
+
+## Get Started Demo - [Using Python](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=python%2Ctfs-2018-2%2Cbrowser)

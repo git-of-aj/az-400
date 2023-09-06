@@ -8,3 +8,6 @@
 
 - ## Gates
 - https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deploy-using-approvals?view=azure-devops
+
+## Deployment Groups
+https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deployment-groups/?toc=%2Fazure%2Fdevops%2Forganizations%2Ftoc.json&view=azure-devops

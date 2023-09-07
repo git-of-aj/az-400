@@ -8,7 +8,7 @@
 https://azuredevopslabs.com/labs/vstsextend/sonarcloud/
 
 ## Pipeline Teams Integration
-
+https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/microsoft-teams?view=azure-devops
 ## Artefacts
 Inhouse Packages => Code once and share packages across your organization. Host your private NuGet, npm, Maven, Python, and Universal Packages with Azure Artifacts for more reliable and scalable builds.
 - feeds = https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/feeds?view=azure-devops

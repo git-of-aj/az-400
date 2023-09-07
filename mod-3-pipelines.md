@@ -42,6 +42,7 @@ In summary, CI/CD pipelines are like a well-organized kitchen where chefs contin
 
 # Azure Pipelines
 - Azure Pipelines automatically builds and tests code projects. It supports all major languages and project types and combines continuous integration, continuous delivery, and continuous testing to build, test, and deliver your code to any destination
+- Key Terms = https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops
 ## Need to get Started
 To use Azure Pipelines, complete the following tasks:
 

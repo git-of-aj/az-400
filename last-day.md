@@ -5,6 +5,7 @@
 ## Azure AUtomation - ARM, DSC, Azure AUtomate
 
 ## SonarCloud - static code analysis
+https://azuredevopslabs.com/labs/vstsextend/sonarcloud/
 
 ## Pipeline Teams Integration
 

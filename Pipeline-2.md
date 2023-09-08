@@ -1,6 +1,8 @@
 ## Multi State Builds
 - Deploy to 2 different targets using same pipeline
 
+Technical debt is a software development analogy for the consequences of taking shortcuts or using quick but suboptimal solutions, leading to future maintenance and quality challenges
+
 ## Feature Flag and App Service Configs 
 Feature flags and configuration settings serve different purposes in Azure DevOps (or any development environment). The choice between them depends on what you want to achieve and the specific use case. Let's compare them and provide use cases for each:
 

@@ -1,4 +1,6 @@
 ## Multi State Builds
+- specify working directory always
+- config files stays in one job only.... job change config files change [no config file error gone once job is same]
 - Deploy to 2 different targets using same pipeline
 ```yaml
 stages:

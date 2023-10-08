@@ -1,5 +1,17 @@
 ## Multi State Builds
 - Deploy to 2 different targets using same pipeline
+```yaml
+stages:
+- stage: A
+  jobs:
+  - job: A1
+  - job: A2
+
+- stage: B
+  jobs:
+  - job: B1
+  - job: B2
+```
 
 Technical debt is a software development analogy for the consequences of taking shortcuts or using quick but suboptimal solutions, leading to future maintenance and quality challenges
 

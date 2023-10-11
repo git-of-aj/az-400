@@ -1,3 +1,6 @@
+## Azure Key Vault in pipeline
+https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-key-vault?view=azure-devops&tabs=yaml
+
 ## Deployment Paterrns
 
 ## Azure App Service Feature Flag

@@ -61,3 +61,6 @@ jobs:
         template: $GITHUB_WORKSPACE/azuredeploy.json  # Set this to the location of your template file
         parameters: $GITHUB_WORKSPACE/azuredeploy.parameters.json # Set this to the location of your parameters file
 ```
+## azure app insight python demo
+https://learn.microsoft.com/en-us/archive/blogs/najib/monitoring-python-applications-with-azure-app-insights
+- flask app demo - https://learn.microsoft.com/en-us/previous-versions/azure/azure-monitor/app/opencensus-python-request#track-flask-applications

@@ -5,7 +5,7 @@ on: push
 # For help, go to https://github.com/Azure/Actions
 
 env:
-  AZURE_RESOURCE_GROUP: hcl  # set this to your Azure Resource group's name  
+  AZURE_RESOURCE_GROUP: github  # set this to your Azure Resource group's name  
   AZURE_SUBSCRIPTION_ID: 584818f8-83c7-40bd-bc35-a7b122f645b0   # set this to your Azure Subscription Id
   
 jobs:
@@ -38,5 +38,5 @@ jobs:
         # You can change these environment variables for your configuration:   AZURE_SUBSCRIPTION_ID, AZURE_RESOURCE_GROUP
         subscriptionId: ${{ env.AZURE_SUBSCRIPTION_ID }}
         resourceGroupName: ${{ env.AZURE_RESOURCE_GROUP }}
-        template: $GITHUB_WORKSPACE/arm-template/azuredeploy.json # Set this to the location of your template file
-        parameters: $GITHUB_WORKSPACE/arm-template/azuredeploy.parameters.json # Set this to the location of your parameters file
+        template: arm-template/azuredeploy.json # Set this to the location of your template file
+        parameters: arm-template/azuredeploy.parameters.json # Set this to the location of your parameters file

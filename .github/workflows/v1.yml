@@ -24,6 +24,12 @@ jobs:
     # Checkout
     - name: Checkout
       uses: actions/checkout@v1
+
+    # Verification
+    - name: List Files
+      run: |
+        # List all files and directories in the current working directory
+        ls -la
         
     # Deployment of template    
     - name: Deploy ARM Template
@@ -32,5 +38,5 @@ jobs:
         # You can change these environment variables for your configuration:   AZURE_SUBSCRIPTION_ID, AZURE_RESOURCE_GROUP
         subscriptionId: ${{ env.AZURE_SUBSCRIPTION_ID }}
         resourceGroupName: ${{ env.AZURE_RESOURCE_GROUP }}
-        template: az-400/arm-template/azuredeploy.json # Set this to the location of your template file
-        parameters: az-400/arm-template/azuredeploy.parameters.json # Set this to the location of your parameters file
+        template: $GITHUB_WORKSPACE/arm-template/azuredeploy.json # Set this to the location of your template file
+        parameters: $GITHUB_WORKSPACE/arm-template/azuredeploy.parameters.json # Set this to the location of your parameters file

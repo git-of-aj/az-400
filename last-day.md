@@ -1,5 +1,6 @@
 ## Deployment  Approvals & Release Gates
 https://learn.microsoft.com/en-us/azure/devops/pipelines/release/approvals/?view=azure-devops&tabs=yaml
+- labs: https://www.azuredevopslabs.com/labs/vstsextend/releasegates/
 
 ## Azure Key Vault in pipeline
 https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-key-vault?view=azure-devops&tabs=yaml

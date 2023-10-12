@@ -7,7 +7,12 @@ You can enable notifications from your project settings to subscribe to release 
 - From your project, select gear icon Project settings.
 
 - Select Notifications from the left navigation pane, and then select New subscription > Release to add a new event subscription.
-- 
+- **customised email via azure sendgrid**
+- you have a similar problem, I recommend you using SendGrid. It's more easier.
+
+- Just create a resource "SendGrid" on Azure Portal.
+Create an API Key from SendGrid.
+Configure the pipeline with the key.
 ## Azure Key Vault in pipeline
 https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-key-vault?view=azure-devops&tabs=yaml
 

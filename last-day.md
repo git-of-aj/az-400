@@ -1,7 +1,13 @@
 ## Deployment  Approvals & Release Gates
 https://learn.microsoft.com/en-us/azure/devops/pipelines/release/approvals/?view=azure-devops&tabs=yaml
 - labs: https://www.azuredevopslabs.com/labs/vstsextend/releasegates/
+## enable email for notification
+You can enable notifications from your project settings to subscribe to release events. Emails are sent to approvers with links to the summary page where they can approve/reject the release.
 
+- From your project, select gear icon Project settings.
+
+- Select Notifications from the left navigation pane, and then select New subscription > Release to add a new event subscription.
+- 
 ## Azure Key Vault in pipeline
 https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-key-vault?view=azure-devops&tabs=yaml
 

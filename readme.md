@@ -14,6 +14,6 @@ described in Epic example: creating a DR Site
 - how ms plans with devops - https://learn.microsoft.com/en-us/devops/plan/how-microsoft-plans-devops
 - Stages for Delivery:
 Dev => Test => SIT => UAT => pre-Prod => Prod
-## github
+## Git and Github
 - github with azure boards - https://learn.microsoft.com/en-us/azure/devops/boards/github/?view=azure-devops
 - git LFS (LARGE FILE STORAGE) => FREE GITHUB ONLY 2 GB MAX FILE SIZE : https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage

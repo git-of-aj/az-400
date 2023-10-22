@@ -3,3 +3,5 @@
 https://learn.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops
 
 - how ms plans with devops - https://learn.microsoft.com/en-us/devops/plan/how-microsoft-plans-devops
+
+- git LFS (LARGE FILE STORAGE) => FREE GITHUB ONLY 2 GB MAX FILE SIZE : https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage

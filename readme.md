@@ -21,3 +21,30 @@ described in Epic example: creating a DR Site
 - `merge conflict`: Merge conflicts in Git occur when two different branches have made changes to the same part of a file, and Git doesn't know which changes to keep.
 - NOT RECOMMENDED : `Overwriting Git history` means making changes to commits that have already been pushed to a shared repository. This could include modifying commit messages, removing or adding commits, or even reordering commits in the history. It's done using commands like git commit --amend, git rebase, or git filter-branch.
 - git LFS (LARGE FILE STORAGE) => FREE GITHUB ONLY 2 GB MAX FILE SIZE : https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage
+
+## Repo 
+git clone –depth [depth] [clone-url]
+
+- On the bottom of the branch policies page you can select Automatically included reviewers. Click the + button to add reviewers. When adding the reviewers you can select if these selected reviewers are required or optional. This is actually something of a rule-builder, you can add multiple 'rules' by repeatedly going through click + and add reviewers
+
+https://stackoverflow.com/questions/64754998/how-do-i-add-a-required-reviewer-when-people-of-a-given-team-create-a-pull-reque
+
+`Project settings => Notifications => new settings => + Subscription => code` => 
+https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-request-notifications?view=azure-devops
+
+- run test pipeline b4 merge pr to auto test :
+To trigger the pipeline on pull request merge, you can use the "Build Validation" feature:
+
+- In the branch policies settings, under "Build Validation," click on "Add build policy."
+2. Select your YAML pipeline from the list of available builds.
+3. Configure the "Build expiration" and other options as needed.
+
+- you checkout to repo root !
+```yml
+trigger:
+- main
+- test
+# triggers when you create, update anything on pull request
+pr:
+- '*'
+```

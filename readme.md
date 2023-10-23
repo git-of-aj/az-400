@@ -6,7 +6,8 @@ https://learn.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-
 2. Backlogs: Work needed to do
 3. Sprints: time frame (1-2 week)
 4. Work items: 1 story => collections of task
-5. Tasks: Anything that helps in achieving Motive
+- work items to track features and requirements you're developing, code defects or bugs, and issues or risks to your project. Each work item is based on a work item type that determines the work item fields available for tracking information. The work item types available to you differ depending on the process used when your project was created: Agile, Basic, Scrum, or CMMI.
+6. Tasks: Anything that helps in achieving Motive
 described in Epic example: creating a DR Site
 6.Bug:
 7. user Story: Client's Requirement

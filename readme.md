@@ -47,4 +47,7 @@ trigger:
 # triggers when you create, update anything on pull request
 pr:
 - '*'
+pool:
+# Name of Self Hosted Agnet Pool 
+  name: Default
 ```

@@ -12,6 +12,8 @@ described in Epic example: creating a DR Site
 6.Bug:
 7. user Story: Client's Requirement
 
+* [Cycle Time in dashboards](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/cycle-time-and-lead-time?toc=%2Fazure%2Fdevops%2Fboards%2Ftoc.json&view=azure-devops)
+
 - how ms plans with devops - https://learn.microsoft.com/en-us/devops/plan/how-microsoft-plans-devops
 - Stages for Delivery:
 `Dev => Test => SIT => UAT => pre-Prod => Prod`

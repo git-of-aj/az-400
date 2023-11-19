@@ -1,12 +1,13 @@
 ## Project Settings 
 Teams => Include Users, Teams => Project group 'MacTraining Team' cannot be added to group 'tst', it is from a different project.
+- MS DOCS => https://learn.microsoft.com/en-us/azure/devops/organizations/settings/about-settings?view=azure-devops
 ## Boards
 - Azure Boards TOC (ms docs) :https://learn.microsoft.com/en-us/azure/devops/boards/?view=azure-devops
 - [azure Boards labs](https://azuredevopslabs.com/labs/azuredevops/agile/)
 https://learn.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops
 1. Epic: Feature to Deliver (Goal)
 2. Backlogs: Work needed to do
-3. Sprints: time frame (1-2 week)
+3. Sprints aka Iteration Path: time frame (1-2 week): Iteration Paths, also referred to as sprints, support assignment of work items to time-box intervals. You define iteration paths at the project level, and then each team selects the paths that they want to use.
 4. Work items: 1 story => collections of task
 - work items to track features and requirements you're developing, code defects or bugs, and issues or risks to your project. Each work item is based on a work item type that determines the work item fields available for tracking information. The work item types available to you differ depending on the process used when your project was created: Agile, Basic, Scrum, or CMMI.
 6. Tasks: Anything that helps in achieving Motive

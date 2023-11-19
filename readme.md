@@ -31,6 +31,8 @@ described in Epic example: creating a DR Site
 ## Repo 
 git clone –depth [depth] [clone-url]
 
+1. Repo => commits shows Graph what merged where?
+
 - On the bottom of the branch policies page you can select Automatically included reviewers. Click the + button to add reviewers. When adding the reviewers you can select if these selected reviewers are required or optional. This is actually something of a rule-builder, you can add multiple 'rules' by repeatedly going through click + and add reviewers
 
 https://stackoverflow.com/questions/64754998/how-do-i-add-a-required-reviewer-when-people-of-a-given-team-create-a-pull-reque
@@ -46,6 +48,7 @@ To trigger the pipeline on pull request merge, you can use the "Build Validation
 3. Configure the "Build expiration" and other options as needed.
 
 - you checkout to repo root !
+
 ```yml
 trigger:
 - main

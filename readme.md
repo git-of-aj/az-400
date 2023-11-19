@@ -1,3 +1,5 @@
+## Project Settings 
+Teams => Include Users, Teams => Project group 'MacTraining Team' cannot be added to group 'tst', it is from a different project.
 ## Boards
 - Azure Boards TOC (ms docs) :https://learn.microsoft.com/en-us/azure/devops/boards/?view=azure-devops
 - [azure Boards labs](https://azuredevopslabs.com/labs/azuredevops/agile/)

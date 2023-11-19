@@ -23,6 +23,7 @@ described in Epic example: creating a DR Site
 ## Git and Github
 - github with azure boards - https://learn.microsoft.com/en-us/azure/devops/boards/github/?view=azure-devops
 1. commit / pull requests can be added => but b4 that boards <=> github ELSE ERROR 🚫
+2. In Github Commit make commit message as `AB#ID` ID = ID of work Item ==> https://learn.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops
 - `merge conflict`: Merge conflicts in Git occur when two different branches have made changes to the same part of a file, and Git doesn't know which changes to keep.
 - NOT RECOMMENDED : `Overwriting Git history` means making changes to commits that have already been pushed to a shared repository. This could include modifying commit messages, removing or adding commits, or even reordering commits in the history. It's done using commands like git commit --amend, git rebase, or git filter-branch.
 - git LFS (LARGE FILE STORAGE) => FREE GITHUB ONLY 2 GB MAX FILE SIZE : https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage

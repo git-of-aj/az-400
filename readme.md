@@ -16,6 +16,8 @@ described in Epic example: creating a DR Site
 7. user Story: Client's Requirement
 
 * [Cycle Time in dashboards](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/cycle-time-and-lead-time?toc=%2Fazure%2Fdevops%2Fboards%2Ftoc.json&view=azure-devops)
+1. Lead Time: planning to delivery full time
+2. cycle time: my team strated taking action & delivered in ...... time
 * [WIki Azuer Boards](https://learn.microsoft.com/en-us/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser)
 * [service hook](https://learn.microsoft.com/en-us/azure/devops/service-hooks/overview?toc=%2Fazure%2Fdevops%2Fmarketplace-extensibility%2Ftoc.json&view=azure-devops)
 - how ms plans with devops - https://learn.microsoft.com/en-us/devops/plan/how-microsoft-plans-devops

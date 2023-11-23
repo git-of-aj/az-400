@@ -2,7 +2,7 @@
 Teams => Include Users, Teams => Project group 'MacTraining Team' cannot be added to group 'tst', it is from a different project.
 - MS DOCS => https://learn.microsoft.com/en-us/azure/devops/organizations/settings/about-settings?view=azure-devops
 ## Boards
-- Azure Boards TOC (ms docs) :https://learn.microsoft.com/en-us/azure/devops/boards/?view=azure-devops
+- Azure Boards TOC (ms docs) : https://learn.microsoft.com/en-us/azure/devops/boards/?view=azure-devops
 - [azure Boards labs](https://azuredevopslabs.com/labs/azuredevops/agile/)
 https://learn.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops
 1. Epic: Feature to Deliver (Goal)
@@ -16,7 +16,8 @@ described in Epic example: creating a DR Site
 7. user Story: Client's Requirement
 
 * [Cycle Time in dashboards](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/cycle-time-and-lead-time?toc=%2Fazure%2Fdevops%2Fboards%2Ftoc.json&view=azure-devops)
-
+* [WIki Azuer Boards](https://learn.microsoft.com/en-us/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser)
+* [service hook](https://learn.microsoft.com/en-us/azure/devops/service-hooks/overview?toc=%2Fazure%2Fdevops%2Fmarketplace-extensibility%2Ftoc.json&view=azure-devops)
 - how ms plans with devops - https://learn.microsoft.com/en-us/devops/plan/how-microsoft-plans-devops
 - Stages for Delivery:
 `Dev => Test => SIT => UAT => pre-Prod => Prod`

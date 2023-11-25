@@ -46,4 +46,8 @@ Docs - https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossa
 - **Functional tests and UI tests:** Perform during the later stages of development to ensure the system meets specified requirements and has a user-friendly interface.
 - **Load tests, stress tests, and smoke tests:** Execute during the testing and deployment phases to evaluate performance, stability, and overall system health.
 
+## Flaky test
+A flaky test is indeed a term used to describe a test that is not consistently accurate. It's called "flaky" because the test results tend to fluctuate or vary across different test runs, even when the code and the test environment remain the same. The lack of consistency in results makes these tests unreliable for providing clear and deterministic feedback on the state of the software
+- by default enabled : Project settings => piplines => test management => ss + explain: https://learn.microsoft.com/en-us/azure/devops/pipelines/test/flaky-test-management?view=azure-devops
+
 Each type of test serves a specific purpose in ensuring the reliability and quality of software, and a combination of these tests contributes to a comprehensive testing strategy.

@@ -32,7 +32,16 @@ described in Epic example: creating a DR Site
 - git LFS (LARGE FILE STORAGE) => FREE GITHUB ONLY 2 GB MAX FILE SIZE : https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage
 
 ## Repo 
-git clone –depth [depth] [clone-url]
+`git clone –depth [depth] [clone-url]`
+
+In centralised Repo, merge b4 comit => https://www.toptal.com/software/trunk-based-development-git-flow
+
+![image](https://github.com/Ananyojha/az-400/assets/76782360/d52daf80-33d6-4f23-8920-7aa1cc9dfa03)
+
+### Dev Styles
+1. Git flow: 1 master barnch => feature branch => bug branches => merge them =>  strict control. Only authorized developers can approve changes after looking at them closely. It ensures code quality and helps eliminate bugs early.
+* very slow dev
+* pull request focus on new code not whole
 
 1. Repo => commits shows Graph what merged where?
 

@@ -36,7 +36,7 @@ described in Epic example: creating a DR Site
 ## Repo 
 `git clone –depth [depth] [clone-url]`
 
-In centralised Repo, merge b4 comit => https://www.toptal.com/software/trunk-based-development-git-flow
+**In centralised Repo, merge b4 comit** => https://www.toptal.com/software/trunk-based-development-git-flow
 
 ![image](https://github.com/Ananyojha/az-400/assets/76782360/d52daf80-33d6-4f23-8920-7aa1cc9dfa03)
 
@@ -53,6 +53,13 @@ https://stackoverflow.com/questions/64754998/how-do-i-add-a-required-reviewer-wh
 
 `Project settings => Notifications => new settings => + Subscription => code` => 
 https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-request-notifications?view=azure-devops
+
+⚠️⚠️⚠️ WHY DIFFERENT FEATURE BRANCHES??  A traditional application has one release pipeline that is shared among many teams. This process often introduces bottlenecks. When teams have the authority to move fast, they can release new features continuously, often several times per day.
+
+The way you operate an application that releases multiple times a day is different from one that releases once or twice a year. Under a DevOps model, development and operations teams take ownership of service with shared responsibility. Through a combination of cultural philosophies, practices, and tools, they find ways to deliver applications and services at high velocity.  
+ 
+
+![image](https://github.com/Ananyojha/az-400/assets/76782360/5f9c054a-72db-49c9-89a1-fe7d89166185)
 
 - run test pipeline b4 merge pr to auto test :
 To trigger the pipeline on pull request merge, you can use the "Build Validation" feature:

@@ -7,13 +7,13 @@ Teams => Include Users, Teams => Project group 'MacTraining Team' cannot be adde
 https://learn.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops
 1. Epic: Feature to Deliver (Goal)
 2. Backlogs: Work needed to do
-3. Sprints aka Iteration Path: time frame (1-2 week): Iteration Paths, also referred to as sprints, support assignment of work items to time-box intervals. You define iteration paths at the project level, and then each team selects the paths that they want to use.
+3. Sprints aka Iteration Path: time frame (1-2 week or 2-4 week): Iteration Paths, also referred to as sprints, support assignment of work items to time-box intervals. You define iteration paths at the project level, and then each team selects the paths that they want to use.
 4. Work items: 1 story => collections of task
 - work items to track features and requirements you're developing, code defects or bugs, and issues or risks to your project. Each work item is based on a work item type that determines the work item fields available for tracking information. The work item types available to you differ depending on the process used when your project was created: Agile, Basic, Scrum, or CMMI.
-6. Tasks: Anything that helps in achieving Motive
+6. Tasks: `Smallest Measurable unit of work`Anything that helps in achieving Motive
 described in Epic example: creating a DR Site
 6.Bug:
-7. user Story: Client's Requirement
+7. user Story: `A complete cycle of users behaviour. what to see post login` Client's Requirement
 
 * [Cycle Time in dashboards](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/cycle-time-and-lead-time?toc=%2Fazure%2Fdevops%2Fboards%2Ftoc.json&view=azure-devops)
 1. Lead Time: planning to delivery full time

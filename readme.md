@@ -61,8 +61,11 @@ The way you operate an application that releases multiple times a day is differe
 
 ![image](https://github.com/Ananyojha/az-400/assets/76782360/5f9c054a-72db-49c9-89a1-fe7d89166185)
 
+# Pipeline
 - run test pipeline b4 merge pr to auto test :
 To trigger the pipeline on pull request merge, you can use the "Build Validation" feature:
+
+`AZ WEBAPP UP ` - https://learn.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest#az-webapp-up
 
 - In the branch policies settings, under "Build Validation," click on "Add build policy."
 2. Select your YAML pipeline from the list of available builds.

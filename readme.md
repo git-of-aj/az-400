@@ -84,3 +84,10 @@ pool:
 # Name of Self Hosted Agnet Pool 
   name: Default
 ```
+## SOnarcloud Repo:
+```sh
+ https://github.com/SonarSource/sonar-scanning-examples.git
+```
+- [Lab](https://azuredevopslabs.com/labs/vstsextend/sonarcloud/)
+## Mend Demo Generator - 
+- [Lab](https://azuredevopslabs.com/labs/vstsextend/whitesource/)

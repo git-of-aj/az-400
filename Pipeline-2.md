@@ -14,7 +14,15 @@ stages:
   - job: B1
   - job: B2
 ```
-
+## Demands in Agent 
+```yml
+pool:
+  name: labs
+  demands: 
+  - terraform 
+  - python
+```
+- check if software installed using `seetings => agent pool => agents => capabilities` it auto detects softwares
 Technical debt is a software development analogy for the consequences of taking shortcuts or using quick but suboptimal solutions, leading to future maintenance and quality challenges
 
 ## Feature Flag and App Service Configs 

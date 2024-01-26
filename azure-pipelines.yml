@@ -4,9 +4,9 @@ trigger:
 stages:
 - stage: Test
 
-variables:
-- name: test-var
-value: 'Test-Value'
+  variables:
+  - name: test-var
+    value: 'Test-Value'
 
   pool:
     vmImage: ubuntu-latest
@@ -16,7 +16,7 @@ value: 'Test-Value'
     displayName: 'Run a one-line script'
 
     steps:
-    - script: echo Hello, world! This is variable ===> $(test-var)
+    - scrit: echo Hello, world! This is variable ===> $(test-var)
 
 - stage: Deploy
   dependsOn: Test

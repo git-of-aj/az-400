@@ -16,7 +16,11 @@ stages:
     displayName: 'Run a one-line script'
 
     steps:
-    - scrit: echo Hello, world! This is variable ===> $(test-var)
+    - script: |
+        echo Hello, world! This is variable ===> $(test-var)
+        exit 127
+
+
 
 - stage: Deploy
   dependsOn: Test

@@ -1,0 +1,37 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+stages:
+- stage: Test
+
+pool:
+  vmImage: ubuntu-latest
+
+  Job: 
+  - Job: Test
+
+    steps:
+    - script: echo Hello, world!
+      displayName: 'Run a one-line script'
+
+- stage: Deploy
+  Dependson: Test
+
+pool:
+  vmImage: windows-2019
+
+  Job: 
+  - Job: Powershell
+
+      steps:
+      - task: PowerShell@2
+        inputs:
+          targetType: 'inline'
+          script: 'Write-Host "Hello World"'
+
+

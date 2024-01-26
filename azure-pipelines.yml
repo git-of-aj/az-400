@@ -4,6 +4,10 @@ trigger:
 stages:
 - stage: Test
 
+variables:
+- name: test-var
+value: 'Test-Value'
+
   pool:
     vmImage: ubuntu-latest
 
@@ -12,7 +16,7 @@ stages:
     displayName: 'Run a one-line script'
 
     steps:
-    - script: echo Hello, world!
+    - script: echo Hello, world! This is variable ===> $(test-var)
 
 - stage: Deploy
   dependsOn: Test
@@ -27,4 +31,4 @@ stages:
     - task: PowerShell@2
       inputs:
         targetType: 'inline'
-        script: 'Write-Host "Hello World"'
+        script: 'Write-Host "Hello World"  Variable ===> $(test-var)'

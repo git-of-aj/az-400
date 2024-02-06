@@ -39,7 +39,20 @@ In Continuous Deployment, the kitchen automatically serves the meal to customers
 
 In summary, CI/CD pipelines are like a well-organized kitchen where chefs continuously prepare, test, and serve meals (code changes) to customers (production). CI focuses on cooking and testing, while CD manages when and how the meals are served, with Continuous Deployment being the most automatic and efficient option.
 
+# pipeline agent
+Although multiple agents can be installed per machine, we strongly suggest to only install one agent per machine. Installing two or more agents might adversely affect performance and the result of your pipelines.
+- uses [polling](https://dev.to/pragyasapkota/polling-and-streaming-15h5) to get data
+### installation:
+1. Personal access token
+2. Device code flow
+3. Service principal
+The authentication method used for registering the agent is used only during agent registration.
 
+### Parallel Jobs
+- Parallel jobs represents the number of jobs you can run at the same time in your organization.
+-  If your organization has a single parallel job, you can run a single job at a time in your organization, with any additional concurrent jobs being queued until the first job completes
+-  To run two jobs at the same time, you need two parallel jobs.
+-   **Depending on the number of concurrent pipelines you need to run, you might need more parallel jobs**
 # Azure Pipelines
 - Azure Pipelines automatically builds and tests code projects. It supports all major languages and project types and combines continuous integration, continuous delivery, and continuous testing to build, test, and deliver your code to any destination
 - Key Terms = https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops

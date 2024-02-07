@@ -53,6 +53,14 @@ The authentication method used for registering the agent is used only during age
 -  If your organization has a single parallel job, you can run a single job at a time in your organization, with any additional concurrent jobs being queued until the first job completes
 -  To run two jobs at the same time, you need two parallel jobs.
 -   **Depending on the number of concurrent pipelines you need to run, you might need more parallel jobs**
+
+## ENvironments
+-  An Azure DevOps environment represents a logical target where your pipeline deploys software.
+-  Azure DevOps environments aren't available in classic pipelines. For classic pipelines, deployment groups offer similar functionality.
+-  [Docs](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
+-  A deployment job is a collection of steps to be run sequentially. A deployment job can be used to target an entire environment (group of resources)
+-  Checks are available to the resource Owner to control when a stage in a pipeline consumes a resource. As the owner of a resource, such as an environment, you can define approvals and checks that must be satisfied before a stage consuming that resource starts.
+-  he Creator, Administrator, and user roles can manage approvals and checks. The Reader role can't manage approvals and checks.
 # Azure Pipelines
 - Azure Pipelines automatically builds and tests code projects. It supports all major languages and project types and combines continuous integration, continuous delivery, and continuous testing to build, test, and deliver your code to any destination
 - Key Terms = https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops

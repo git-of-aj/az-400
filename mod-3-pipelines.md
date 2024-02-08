@@ -61,6 +61,12 @@ The authentication method used for registering the agent is used only during age
 -  A deployment job is a collection of steps to be run sequentially. A deployment job can be used to target an entire environment (group of resources)
 -  Checks are available to the resource Owner to control when a stage in a pipeline consumes a resource. As the owner of a resource, such as an environment, you can define approvals and checks that must be satisfied before a stage consuming that resource starts.
 -  he Creator, Administrator, and user roles can manage approvals and checks. The Reader role can't manage approvals and checks.
+
+## Azure pipeline templates
+[Docs](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops&pivots=templates-includes)
+- Templates let you define reusable content, logic, and parameters in YAML pipelines
+- same tasks in a template and then include the template multiple times in different stages of your YAML pipeline
+- hide technical task that other team not requires to know 
 # Azure Pipelines
 - Azure Pipelines automatically builds and tests code projects. It supports all major languages and project types and combines continuous integration, continuous delivery, and continuous testing to build, test, and deliver your code to any destination
 - Key Terms = https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops

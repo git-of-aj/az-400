@@ -1,3 +1,6 @@
+----------------------------------------------------------
+Redhat = https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/chap-managing_services_with_systemd
+-------------------------------------------------------------------
 ## Branching strategy
 - [MS RECOMMENDtions](https://learn.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
 

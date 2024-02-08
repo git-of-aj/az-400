@@ -66,7 +66,10 @@ The authentication method used for registering the agent is used only during age
 [Docs](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops&pivots=templates-includes)
 - Templates let you define reusable content, logic, and parameters in YAML pipelines
 - same tasks in a template and then include the template multiple times in different stages of your YAML pipeline
-- hide technical task that other team not requires to know 
+- hide technical task that other team not requires to know
+
+## Trigger Types
+[Docs](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops)
 # Azure Pipelines
 - Azure Pipelines automatically builds and tests code projects. It supports all major languages and project types and combines continuous integration, continuous delivery, and continuous testing to build, test, and deliver your code to any destination
 - Key Terms = https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops

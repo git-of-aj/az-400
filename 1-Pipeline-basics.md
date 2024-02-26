@@ -1,7 +1,57 @@
 **CI/CD Pipelines:**
 [MS DOCS - CI vs CD ](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#automate-tests-builds-and-delivery)
 
-**Definition:**
+In summary, CI/CD pipelines are like a well-organized kitchen where chefs continuously prepare, test, and serve meals (code changes) to customers (production). CI focuses on cooking and testing, while CD manages when and how the meals are served, with Continuous Deployment being the most automatic and efficient option.
+
+# pipeline agent
+Although multiple agents can be installed per machine, we strongly suggest to only install one agent per machine. Installing two or more agents might adversely affect performance and the result of your pipelines.
+- uses [polling](https://dev.to/pragyasapkota/polling-and-streaming-15h5) to get data
+### installation:
+1. Personal access token
+2. Device code flow
+3. Service principal
+The authentication method used for registering the agent is used only during agent registration.
+
+### Parallel Jobs
+- Parallel jobs represents the number of jobs you can run at the same time in your organization.
+-  If your organization has a single parallel job, you can run a single job at a time in your organization, with any additional concurrent jobs being queued until the first job completes
+-  To run two jobs at the same time, you need two parallel jobs.
+-   **Depending on the number of concurrent pipelines you need to run, you might need more parallel jobs**
+
+## ENvironments
+-  An Azure DevOps environment represents a logical target where your pipeline deploys software.
+-  Azure DevOps environments aren't available in classic pipelines. For classic pipelines, deployment groups offer similar functionality.
+-  [Docs](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
+-  A deployment job is a collection of steps to be run sequentially. A deployment job can be used to target an entire environment (group of resources)
+-  Checks are available to the resource Owner to control when a stage in a pipeline consumes a resource. As the owner of a resource, such as an environment, you can define approvals and checks that must be satisfied before a stage consuming that resource starts.
+-  he Creator, Administrator, and user roles can manage approvals and checks. The Reader role can't manage approvals and checks.
+
+## Azure pipeline templates
+[Docs](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops&pivots=templates-includes)
+- Templates let you define reusable content, logic, and parameters in YAML pipelines
+- same tasks in a template and then include the template multiple times in different stages of your YAML pipeline
+- hide technical task that other team not requires to know
+
+## Trigger Types
+[Docs](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops)
+
+## Matrix Build: 
+- a job execution srategy
+- A build matrix is something that comes out of product-based companies: you have a single code base that you need to build across multiple permutations of operating systems, software versions, etc
+- like according to OS the software Installing scripts / steps is different
+- [MS DOCS](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/jobs-job-strategy?view=azure-pipelines&viewFallbackFrom=azure-devops#examples)
+# Azure Pipelines
+- Azure Pipelines automatically builds and tests code projects. It supports all major languages and project types and combines continuous integration, continuous delivery, and continuous testing to build, test, and deliver your code to any destination
+- Key Terms = https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops
+## Need to get Started
+To use Azure Pipelines, complete the following tasks:
+
+Have an organization in Azure DevOps. If you don't have one, create an organization now.
+Store your source code in a version control system.![image](https://github.com/Ananyojha/az-400/assets/76782360/b5d53707-6ca8-4907-9db8-43ea45e9774d)
+
+## Get Started Demo - [Using Python](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=python%2Ctfs-2018-2%2Cbrowser)
+
+- **Definition:**
 
 **CI (Continuous Integration)**: CI is a software development practice where code changes are frequently integrated into a shared repository. Each integration triggers automated tests to detect and fix issues early in the development process.
 
@@ -36,47 +86,3 @@ In Continuous Deployment, the kitchen automatically serves the meal to customers
 5. **Role in SDLC (Software Development Life Cycle)**:
    - CI plays a crucial role in the development phase, ensuring that code is continuously integrated and tested during development.
    - CD spans the later stages of the SDLC, from integration and testing to delivery and deployment, ensuring that code is ready for production and, in the case of Continuous Deployment, automatically deploying it.
-
-In summary, CI/CD pipelines are like a well-organized kitchen where chefs continuously prepare, test, and serve meals (code changes) to customers (production). CI focuses on cooking and testing, while CD manages when and how the meals are served, with Continuous Deployment being the most automatic and efficient option.
-
-# pipeline agent
-Although multiple agents can be installed per machine, we strongly suggest to only install one agent per machine. Installing two or more agents might adversely affect performance and the result of your pipelines.
-- uses [polling](https://dev.to/pragyasapkota/polling-and-streaming-15h5) to get data
-### installation:
-1. Personal access token
-2. Device code flow
-3. Service principal
-The authentication method used for registering the agent is used only during agent registration.
-
-### Parallel Jobs
-- Parallel jobs represents the number of jobs you can run at the same time in your organization.
--  If your organization has a single parallel job, you can run a single job at a time in your organization, with any additional concurrent jobs being queued until the first job completes
--  To run two jobs at the same time, you need two parallel jobs.
--   **Depending on the number of concurrent pipelines you need to run, you might need more parallel jobs**
-
-## ENvironments
--  An Azure DevOps environment represents a logical target where your pipeline deploys software.
--  Azure DevOps environments aren't available in classic pipelines. For classic pipelines, deployment groups offer similar functionality.
--  [Docs](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
--  A deployment job is a collection of steps to be run sequentially. A deployment job can be used to target an entire environment (group of resources)
--  Checks are available to the resource Owner to control when a stage in a pipeline consumes a resource. As the owner of a resource, such as an environment, you can define approvals and checks that must be satisfied before a stage consuming that resource starts.
--  he Creator, Administrator, and user roles can manage approvals and checks. The Reader role can't manage approvals and checks.
-
-## Azure pipeline templates
-[Docs](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops&pivots=templates-includes)
-- Templates let you define reusable content, logic, and parameters in YAML pipelines
-- same tasks in a template and then include the template multiple times in different stages of your YAML pipeline
-- hide technical task that other team not requires to know
-
-## Trigger Types
-[Docs](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops)
-# Azure Pipelines
-- Azure Pipelines automatically builds and tests code projects. It supports all major languages and project types and combines continuous integration, continuous delivery, and continuous testing to build, test, and deliver your code to any destination
-- Key Terms = https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops
-## Need to get Started
-To use Azure Pipelines, complete the following tasks:
-
-Have an organization in Azure DevOps. If you don't have one, create an organization now.
-Store your source code in a version control system.![image](https://github.com/Ananyojha/az-400/assets/76782360/b5d53707-6ca8-4907-9db8-43ea45e9774d)
-
-## Get Started Demo - [Using Python](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=python%2Ctfs-2018-2%2Cbrowser)

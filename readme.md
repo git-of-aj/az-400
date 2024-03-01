@@ -4,6 +4,10 @@ Redhat = https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/
 ## Branching strategy
 - [MS RECOMMENDtions](https://learn.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
 
+## deployment strategies
+[Medium](https://medium.com/@navya.cloudops/devops-zero-to-hero-day-20-deployment-strategies-e6712b4801e4)
+[AWS](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/deployment-strategies.html)
+
 ## Project Settings 
 Teams => Include Users, Teams => Project group 'MacTraining Team' cannot be added to group 'tst', it is from a different project.
 - MS DOCS => https://learn.microsoft.com/en-us/azure/devops/organizations/settings/about-settings?view=azure-devops

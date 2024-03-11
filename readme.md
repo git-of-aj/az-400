@@ -46,6 +46,11 @@ described in Epic example: creating a DR Site
 ## Repo 
 `git clone –depth [depth] [clone-url]`
 
+## TFVC vs GIT 
+TFVC is a centralized version control system. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
+
+Git: Git is a distributed version control system. Git repositories can live locally (on a developer’s machine). Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection.
+
 **In centralised Repo, merge b4 comit** => https://www.toptal.com/software/trunk-based-development-git-flow
 
 ![image](https://github.com/Ananyojha/az-400/assets/76782360/d52daf80-33d6-4f23-8920-7aa1cc9dfa03)

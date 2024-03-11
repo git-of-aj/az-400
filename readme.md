@@ -1,6 +1,31 @@
 ----------------------------------------------------------
 Redhat = https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/chap-managing_services_with_systemd
 -------------------------------------------------------------------
+
+Whereas reverting is designed to safely undo a public commit, git reset is designed to undo local changes to the Staging Index and Working Directory. Because of their distinct goals, the two commands are implemented differently: resetting completely removes a changeset, whereas reverting maintains the original changeset and uses a new commit to apply the undo.
+
+> To review, git reset is a powerful command that is used to undo local changes to the state of a Git repo. Git reset operates on "The Three Trees of Git". These trees are the Commit History (HEAD), the Staging Index, and the Working Directory. There are three command line options that correspond to the three trees. The options --soft, --mixed, and --hard can be passed to git reset
+
+Second, git revert is able to target an individual commit at an arbitrary point in the history, whereas git reset can only work backward from the current commit
+
+# USe Your agent In pipeline:
+```yml
+ name: az400m03l03a-pool
+ demands:
+ - Agent.Name -equals az400m03-vm0
+```
+
+Trigger pipeline when change to specific paths - 
+```yml
+ trigger:
+   branches:
+     include:
+     - main
+   paths:
+     include:
+     - src/web/*
+```
+
 ## Branching strategy
 - [MS RECOMMENDtions](https://learn.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
 
@@ -50,6 +75,8 @@ described in Epic example: creating a DR Site
 TFVC is a centralized version control system. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
 Git: Git is a distributed version control system. Git repositories can live locally (on a developer’s machine). Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection.
+
+> When you make changes to your files, Git will record the changes in the local repository. You can select the changes that you want to commit by staging them. Commits are always made against your local Git repository, so you don’t have to worry about the commit being perfect or ready to share with others. You can make more commits as you continue to work and push the changes to others when they are ready to be shared.
 
 **In centralised Repo, merge b4 comit** => https://www.toptal.com/software/trunk-based-development-git-flow
 

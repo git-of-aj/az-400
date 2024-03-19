@@ -64,6 +64,11 @@ described in Epic example: creating a DR Site
 * Area paths help in organizing work items based on different functional areas of the mobile app.
 * Iterations provide a timeboxed framework for planning and executing work in short cycles.
 * Backlog items represent `bundle of deliverables in a sprint` the overall work to be done, prioritized and selected for inclusion in specific iterations based on business value and team capacity.
+
+> Teams build the sprint backlog during the sprint planning meeting, typically held on the first day of the sprint
+> he product owner works with the team to identify those stories or backlog items to complete in the sprint.
+
+Planning meetings typically consist of two parts. In the first part, the team and product owner identify the backlog items that the team feels it can commit to completing in the sprint, based on experience with previous sprints. These items get added to the sprint backlog. In the second part, the team determines how it will develop and test each item. They then define and estimate the tasks required to complete each item. Finally, the team commits to implementing some or all the items based on these estimates.
  -----------
 * [Cycle Time in dashboards](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/cycle-time-and-lead-time?toc=%2Fazure%2Fdevops%2Fboards%2Ftoc.json&view=azure-devops)
 1. Lead Time: planning to delivery full time

@@ -53,6 +53,13 @@ described in Epic example: creating a DR Site
 6.Bug:
 7. user Story: `A complete cycle of users behaviour. what to see post login` Client's Requirement
 
+# Area Path boards - 
+- Area paths allow you to group work items by team, product, or feature area. Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths.
+- Add areas when you have these requirements:
+
+1. Filter queries based on a product or feature area
+2. Organize or group work items by team or subteams
+3. Restrict access to work items based on their area.
 * [Cycle Time in dashboards](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/cycle-time-and-lead-time?toc=%2Fazure%2Fdevops%2Fboards%2Ftoc.json&view=azure-devops)
 1. Lead Time: planning to delivery full time
 2. cycle time: my team strated taking action & delivered in ...... time

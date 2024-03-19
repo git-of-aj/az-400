@@ -60,6 +60,11 @@ described in Epic example: creating a DR Site
 1. Filter queries based on a product or feature area
 2. Organize or group work items by team or subteams
 3. Restrict access to work items based on their area.
+
+* Area paths help in organizing work items based on different functional areas of the mobile app.
+* Iterations provide a timeboxed framework for planning and executing work in short cycles.
+* Backlog items represent `bundle of deliverables in a sprint` the overall work to be done, prioritized and selected for inclusion in specific iterations based on business value and team capacity.
+ -----------
 * [Cycle Time in dashboards](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/cycle-time-and-lead-time?toc=%2Fazure%2Fdevops%2Fboards%2Ftoc.json&view=azure-devops)
 1. Lead Time: planning to delivery full time
 2. cycle time: my team strated taking action & delivered in ...... time

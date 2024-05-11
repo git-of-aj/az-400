@@ -37,16 +37,18 @@ git pull / fetch
 - git cherry-pick can be useful for undoing changes. For example, say a commit is accidently made to the wrong branch. You can switch to the correct branch and cherry-pick the commit to where it should belong.
 
 useful tool but not always a best practice. Cherry picking can cause duplicate commits
-
+```
 a - b - c - d   Main
          \
            e - f - g Feature
+```
 
 Originally f was in other 
-
+```
  a - b - c - d - f   Main
          \
            e - f - g Feature
+```
 
 - Git hooks are scripts that run automatically every time a particular event occurs in a Git repository. They let you customize Git’s internal behavior and trigger customizable actions at key points in the development life cycle.
 

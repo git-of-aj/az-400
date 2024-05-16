@@ -2,6 +2,8 @@ migrate from classic to yaml -!https://learn.microsoft.com/en-us/azure/devops/pi
 - secure file
 - [approvals](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass)
 
+- [GitHub Advanced Security](https://learn.microsoft.com/en-us/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops&tabs=yaml)
+
 ----------------------------------------------------------
 Redhat = https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/chap-managing_services_with_systemd
 -------------------------------------------------------------------

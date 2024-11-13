@@ -1,3 +1,28 @@
+## DAST vs SAST
+| SAST | DAST | 
+| --- | ---| 
+| have access to your code (runs test on it) | Don't have access to code (tests running app) |
+| helps find source code security flaws early in dev (open box testing form) | form of closed box testing - imposing like a maclicious actor wanna break into app |
+
+SAST:
+1. Sonarqube
+2. GitHub Advanced Security - CodeQL
+3. Gitlab SAST
+4. ESLint
+5. Bandit
+6. OWASP dependency check
+7. Trivy (Container image scanning)
+
+DAST
+1. OWASP ZAP
+2. Burpsuite
+3. Checkmarx
+4. Wapiti
+5. Arachni
+
+![image](https://github.com/user-attachments/assets/5e46eb9e-2ee8-42c8-ae09-7abb62051d67)
+
+
 migrate from classic to yaml -!https://learn.microsoft.com/en-us/azure/devops/pipelines/migrate/from-classic-pipelines?view=azure-devops
 - secure file
 - [approvals](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass)

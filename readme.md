@@ -22,6 +22,79 @@ DAST
 
 ![image](https://github.com/user-attachments/assets/5e46eb9e-2ee8-42c8-ae09-7abb62051d67)
 
+## Basics
+- CI (Continuous Integration) focuses on integrating and testing code frequently, ensuring that the code is always in a working state before it’s merged.
+- CD (Continuous Delivery) ensures that the code can be automatically deployed to production after passing all tests, but it often requires manual approval before pushing to production.
+- Continuous Deployment automates the entire process, including production deployment, without manual approval.
+- In GitOps, Git serves as the central hub for managing both applications and infrastructure. Changes are committed to Git, and automated tools apply those changes to the environment, ensuring that the infrastructure matches the desired state. This approach promotes version-controlled, declarative infrastructure, and simplifies operations by making deployments and rollbacks automatic. It’s ideal for teams looking to reduce manual operations and increase deployment reliability, especially in cloud-native and Kubernetes environments
+
+## DevSecOps
+DevSecOps is all about integrating security throughout the development process, ensuring that security is automated, continuous, and part of the DevOps pipeline.
+
+To implement DevSecOps in a production environment:
+
+- Automate security tests in the CI/CD pipeline (SAST, DAST, SCA).
+- Manage security as code with tools like OPA or Sentinel.
+- Monitor production environments for anomalies and implement automated incident response.
+- Secure the infrastructure (e.g., Kubernetes, cloud environments, containers).
+- Foster collaboration among developers, security teams, and operations to make security a shared responsibility.
+
+**1. Integrate Security into the CI/CD Pipeline:**
+steps:
+- Static Application Security Testing (SAST): Run static code analysis on your codebase for vulnerabilities, insecure coding practices, and compliance issues before the code is even committed.
+
+> Tools: SonarQube, Checkmarx, Fortify.
+- Dynamic Application Security Testing (DAST): Perform dynamic security testing on your running application in your staging or test environments to identify runtime vulnerabilities such as SQL injection, XSS, etc.
+
+> Tools: OWASP ZAP, Burp Suite, Acunetix.
+- Software Composition Analysis (SCA): Scan dependencies (open source libraries, frameworks) for known vulnerabilities, outdated libraries, or licensing issues.
+
+> Tools: Snyk, Dependabot, WhiteSource.
+- Infrastructure as Code (IaC) Security: Implement security checks for infrastructure code (e.g., Terraform, CloudFormation) to ensure that your infrastructure is secure by design.
+
+> Tools: Checkov, Terraform Sentinel, Prowler.
+- Secret Scanning: Automatically scan code for exposed secrets like API keys, database passwords, or access tokens that might have been accidentally committed.
+
+> Tools: TruffleHog, GitLeaks.
+**2. Implement Security and Compliance as Code**:
+DevSecOps aims to manage and enforce security policies as code, enabling teams to ensure compliance and security automatically in each deployment.
+> Azure Policy or hashicorp sentinel
+**3. Security Monitoring and Incident Response**
+DevSecOps isn't just about preventing vulnerabilities but also about monitoring and responding to security incidents.
+
+steps:
+- Continuous Monitoring: Use security monitoring tools to continuously watch for security threats and anomalies in your production environment (e.g., unauthorized access, DDoS attacks, compromised containers).
+
+> Tools: Prometheus, Grafana, ELK Stack.
+- Intrusion Detection and Prevention: Set up intrusion detection/prevention systems (IDS/IPS) to detect any abnormal activity in real time. Tools like Wazuh and Snort can help with this.
+Centralized Logging: Collect logs from your application, infrastructure, and security systems in a centralized location for real-time analysis and easy access during security investigations.
+
+> Tools: Splunk, ELK Stack (Elasticsearch, Logstash, Kibana).
+- Automated Incident Response: When an anomaly or threat is detected, integrate automated responses such as shutting down suspicious containers, blocking IP addresses, or triggering alerts to your security team.
+
+> Tools: AWS GuardDuty, Azure Sentinel, Kubernetes RBAC policies.
+
+**4. Environment security - fw etc**
+**5. Contiuous feedback and training**
+
+### Key Principles of DevSecOps
+1. Shift Left:
+The idea behind "shift left" is to bring security testing earlier in the SDLC. Rather than waiting until production, security vulnerabilities are identified and addressed as part of the development and testing process.
+
+2. Automation:
+Security checks, such as static code analysis, dynamic testing, and dependency scanning, are automated and embedded into the CI/CD pipeline. Automation helps ensure consistent and efficient security controls.
+
+3. Collaboration:
+DevSecOps fosters a culture where developers, security experts, and operations teams work together throughout the lifecycle, reducing friction and making security everyone's responsibility.
+
+4. Continuous Monitoring:
+Security is not a one-time activity. DevSecOps emphasizes the need for continuous monitoring of the infrastructure and application environment, detecting vulnerabilities or intrusions in real time.
+
+5. Compliance as Code:
+Security and compliance requirements are managed as code. This allows teams to maintain a clear and versioned record of security policies and configurations, which can be automated, versioned, and checked throughout the lifecycle.
+
+6. Minimize Human Intervention:
+By automating the security processes and integrating them into the CI/CD pipeline, DevSecOps reduces the reliance on manual checks and human intervention, which can often lead to errors and vulnerabilities.
 
 migrate from classic to yaml -!https://learn.microsoft.com/en-us/azure/devops/pipelines/migrate/from-classic-pipelines?view=azure-devops
 - secure file
